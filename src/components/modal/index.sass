@@ -1,0 +1,28 @@
+@import '../../assets/styles/constants'
+
+.Modal
+  .modal-background
+    position: fixed
+    z-index: 1
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    background: rgba(33, 33, 33, 0.7)
+
+  .modal-position
+    position: absolute
+    width: 500px
+    background: $white
+    left: calc(50% - 250px)
+    top: 100px
+    padding: 27px
+
+    .close-btn
+      position: absolute
+      top: 5px
+      right: 5px
+      cursor: pointer
+      padding: 1px 2px
+      border: 2px solid $attentionColor
+      border-radius: 3px

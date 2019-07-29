@@ -1,0 +1,55 @@
+@import '../../assets/styles/constants'
+
+.Author
+  position: relative
+
+  .author-name
+    margin: 0
+    padding: 27px 0
+    font-size: $main-header-font-size
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 1px
+    color: $attentionColor
+
+  .arrow
+    position: absolute
+    padding: 20px
+    box-shadow: 3px -3px 0 1px lighten($attentionColor, 25) inset
+    border: solid transparent
+    border-width: 0 0 2rem 2rem
+    transition: 0.2s
+
+  .arrow:hover
+    box-shadow: 2px -2px 0 2px $attentionColor inset
+
+  .arrow-left
+    transform: rotate(45deg)
+
+  .info
+    width: 800px
+    margin: auto
+    text-indent: 17px
+    padding: 27px
+    @media (max-width: $breakpoint-extra-small)
+      padding: 27px 0
+      width: 100%
+
+  .comments
+    width: 500px
+    margin: 0 auto
+    @media (max-width: $breakpoint-extra-small)
+      width: 100%
+    .comments-header
+      border-top: 1px dashed $attentionColor
+      border-bottom: 1px dashed $attentionColor
+      margin: 0
+      padding: 27px
+      text-align: center
+      text-transform: uppercase
+
+
+  .Message-list
+    margin-top: 17px
+    .Message-list-item
+      flex-direction: column

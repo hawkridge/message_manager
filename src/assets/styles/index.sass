@@ -1,0 +1,36 @@
+@import mixins
+@import constants
+@import globalMedia
+
++font-face('PT Sans', '../fonts/PTSans-Regular', 400, 'normal')
++font-face('PT Sans', '../fonts/PTSans-Italic', 300, 'italic')
++font-face('PT Sans', '../fonts/PTSans-Bold', 700, 'bold')
+
+\:root
+  box-sizing: border-box
+
+*,
+::before,
+::after
+  box-sizing: inherit
+
+html,
+body
+  height: 100%
+.root
+  height: 100%
+
+body
+  font-family: $main-font
+  font-size: $main-font-size
+  color: $lightBlack
+
+a
+  text-decoration: none
+
+ul
+  margin: 0
+  padding: 0
+
+li
+  list-style-type: none

@@ -1,0 +1,44 @@
+@import '../../assets/styles/constants'
+
+.Message-add-form
+  padding-top: 17px
+
+  .new-author-field,
+  .new-message-field
+    cursor: pointer
+    width: 100%
+    padding: 8px
+    outline: none
+    border: 1px solid $gray
+    border-radius: 5px
+    color: $darkGray
+    &:focus
+      box-shadow: 1px 1px 8px rgba(255, 20, 147, .3)
+      border-color: transparent
+
+  .new-message-field
+    resize: none
+    padding-bottom: 54px
+
+  .new-message-add-btn
+    cursor: pointer
+    background: $attentionColor
+    border-radius: 5px
+    box-shadow: 1px 1px 3px rgba(230, 230, 230, .7)
+    text-shadow: 1px 1px 1px $gray
+    border-color: transparent
+    padding: 7px 27px
+    color: $white
+    &:hover
+      background: darken($attentionColor, 10)
+      transition: background-color .3s
+
+  .textarea-box
+    position: relative
+    margin: 27px 0
+
+  .counter
+    position: absolute
+    color: $darkGray
+    bottom: 5px
+    right: 5px
